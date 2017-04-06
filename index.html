@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html ng-app="blocChat">
+
     <head lang="en">
+        
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bloc Chat</title>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
+        <link rel="stylesheet" type="text/css" href="styles/landing.css">
+    </head>
 
-
-
-        <body>
-
-
-            <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
-            <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <body class="landing">
+        
+            <section class="left">
+                <h1>Bloc Chat</h1>
+                <ui-view></ui-view>
+            </section>
+            
+            <section class="right">
+                <h2>right section</h2>
+            
+            </section>
+            
+            
+            
             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
             <!-- AngularFire -->
             <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+            <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+            
+            
             <script src="/scripts/app.js"></script>
+            <script src="/services/Room.js"></script>
+            <script src="/scripts/LandingCtrl.js"></script>
 
-
+            <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
             <script>
               // Initialize Firebase
               var config = {
@@ -35,6 +53,4 @@
 
 
         </body>
-
-    </head>
 </html>
