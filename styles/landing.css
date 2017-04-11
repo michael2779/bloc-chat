@@ -38,5 +38,42 @@ section.right {
 }
 
 ul {
-  list-style: none;
+    list-style: none;
+    width: 70%;
+}
+
+.modal-box {
+    position:absolute;
+    width:350px;
+    top: 20%;
+    left: 60%;
+    margin-left: -200px;
+    margin-top: -40px;
+    padding: 6px;
+    border-width: 2px;
+    background-color: darkgrey;
+    border-style: inset;
+    border-color: black;
+}
+
+.btn.btn-default {
+    background-color: aqua;
+}
+
+h3 {
+    color:blue;
+}
+
+.modal-header {
+    color:aliceblue;
+    width: auto;
+    text-align: center;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-footer {
+    text-align: center;
 }

@@ -12,9 +12,15 @@
              controller: 'LandingCtrl as landing',
              templateUrl: '/templates/landing.html'
          })
+         
+        .state('window', {
+        url: '/',
+        controller: 'AddWindowCtrl as window',
+        templateUrl: '/templates/window.html',
+        })
      }
     
 angular
-         .module('blocChat', ['ui.router','firebase'])
+         .module('blocChat', ['ui.router','firebase', 'ui.bootstrap'])
          .config(config);
  })();

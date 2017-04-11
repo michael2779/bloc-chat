@@ -12,20 +12,13 @@
 
         <body class="landing">
         
-            <section class="left">
-                <h1>Bloc Chat</h1>
-                <ui-view></ui-view>
-            </section>
-            
-            <section class="right">
-                <h2>right section</h2>
-            
-            </section>
-            
+            <ui-view></ui-view>
             
             
             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"> </script>
+            
             <!-- AngularFire -->
             <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
 
@@ -45,7 +38,8 @@
 
             <script src="/scripts/app.js"></script>
             <script src="/services/Room.js"></script>
-            <script src="/scripts/LandingCtrl.js"></script>
+            <script src="/controllers/LandingCtrl.js"></script>
+            <script src="/controllers/AddWindowCtrl.js"></script>
 
 
         </body>
