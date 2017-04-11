@@ -1,5 +1,5 @@
 (function(){
-  function LandingCtrl (Room, $uibModal) {
+  function LandingCtrl (Message, Room, $uibModal) {
     this.roomObject = Room.all;
     
     this .addRoom = function(roomName) {
@@ -12,7 +12,13 @@
             controller: 'AddWindowCtrl as window'
         });
     };
-    
+      
+     this.selectRoom = function(room) {
+            this.currentRoom = room;
+            this.messages = Message.getByRoomId(room.$id);
+        }  
+      
+      
     this.dismiss = function() {
         $uibModal.dismiss();
     };
@@ -20,5 +26,5 @@
 
   angular
     .module('blocChat')
-    .controller('LandingCtrl', ['Room', '$uibModal', LandingCtrl]);
+    .controller('LandingCtrl', ['Message', 'Room', '$uibModal', LandingCtrl]);
 })();

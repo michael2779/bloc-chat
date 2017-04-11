@@ -1,8 +1,9 @@
 (function() {
-    console.log ("roomjs");
+    
   function Room($firebaseArray) {
     var ref = firebase.database().ref().child("rooms");
     var rooms = $firebaseArray(ref);
+    var messageReference = firebase.database().ref().child("messages").orderByChild('roomId');
       
       return {
 
