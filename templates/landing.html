@@ -3,15 +3,15 @@
     <button type="button" class="btn btn-default" ng-click="landing.open()">New room</button>
     <ul>
        <li ng-repeat="x in landing.roomObject">
-         <h3>{{x.$value}}</h3>
+         <h3><a href="#" ng-click="landing.selectRoom(x.$id)">{{x.name}}</a></h3>
        </li>
       </ul>
 </section>
 <section class="right">
     <ul>
-        <li>
-            <p>hello</p>
-        </li>
+       <li ng-repeat="x in landing.messages">
+         <h3>{{x.content}}</h3>
+       </li>
     </ul>
 </section>
 

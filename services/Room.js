@@ -9,7 +9,7 @@
 
         all : rooms,
         addRoom : function(roomTitle) {
-            rooms.$add({$value: roomTitle});
+            rooms.$add({name: roomTitle});
         }
 
         }

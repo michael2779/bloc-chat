@@ -1,8 +1,9 @@
 (function(){
   function LandingCtrl (Message, Room, $uibModal) {
     this.roomObject = Room.all;
-    
-    this .addRoom = function(roomName) {
+    this.messages = {};
+      
+    this.addRoom = function(roomName) {
         Room.addRoom(roomName);
     }
     
@@ -13,9 +14,10 @@
         });
     };
       
-     this.selectRoom = function(room) {
-            this.currentRoom = room;
-            this.messages = Message.getByRoomId(room.$id);
+     this.selectRoom = function(roomId) {
+            this.currentRoom = roomId;
+            this.messages = Message.getByRoomId(roomId);
+            console.log(this.messages);
         }  
       
       
