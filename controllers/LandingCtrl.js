@@ -1,5 +1,5 @@
 (function(){
-  function LandingCtrl (Message, Room, $uibModal) {
+  function LandingCtrl (Message, Room, $uibModal, $cookies) {
     this.roomObject = Room.all;
     this.messages = {};
       
@@ -28,5 +28,5 @@
 
   angular
     .module('blocChat')
-    .controller('LandingCtrl', ['Message', 'Room', '$uibModal', LandingCtrl]);
+    .controller('LandingCtrl', ['Message', 'Room', '$uibModal', '$cookies', LandingCtrl]);
 })();

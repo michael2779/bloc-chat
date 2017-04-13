@@ -77,3 +77,9 @@ h3 {
 .modal-footer {
     text-align: center;
 }
+
+.user-section {
+    background-color: darkgrey;
+    border-style: inset;
+    border-color: black;
+}
