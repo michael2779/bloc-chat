@@ -14,16 +14,22 @@
         });
     };
       
-     this.selectRoom = function(roomId) {
+    this.selectRoom = function(roomId) {
             this.currentRoom = roomId;
             this.messages = Message.getByRoomId(roomId);
             console.log(this.messages);
-        }  
+    }
+    
+    this.send = function () {
+        Message.send(this.newMessage, this.currentRoom);
+        this.newMessage = "";
+    }
       
       
     this.dismiss = function() {
         $uibModal.dismiss();
     };
+  
   }
 
   angular

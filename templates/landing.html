@@ -11,7 +11,14 @@
     <ul>
        <li ng-repeat="x in landing.messages">
          <h3>{{x.content}}</h3>
+           <h1>{{x.username}}</h1>
        </li>
     </ul>
 </section>
 
+<section class="bottom-input">
+   <form class="chat-newMessage">
+        <input type = "text" name = "newMessage" ng-model = "landing.newMessage" placeholder="Write message here" />
+       <button class="btn_new_message" type="button" ng-click = "landing.send()">Send</button>    
+   </form>
+</section>

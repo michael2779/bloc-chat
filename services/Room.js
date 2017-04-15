@@ -7,10 +7,10 @@
       
       return {
 
-        all : rooms,
-        addRoom : function(roomTitle) {
-            rooms.$add({name: roomTitle});
-        }
+            all : rooms,
+            addRoom : function(roomTitle) {
+                rooms.$add({name: roomTitle});
+            }
 
         }
  }

@@ -27,8 +27,10 @@ section.left {
 
 section.right {
   float: right;
-  background-color: #FFFFFF;
+  background-color: yellow;
   width: 70%;
+  height: 90%;
+
 }
 
 .landing:after {
@@ -82,4 +84,9 @@ h3 {
     background-color: darkgrey;
     border-style: inset;
     border-color: black;
+}
+
+.bottom-input {
+    background-color: gold;
+    padding-bottom: 60px;
 }
