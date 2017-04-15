@@ -11,8 +11,6 @@
                 return $firebaseArray(ref.orderByChild('roomid').equalTo(roomId));
             },
             send: function(newMessage, sendRoomId) {//object with multiple properties
-                //send method logic
-                //takes a message object as an argument and submits it to your Firebase server
                 messages.$add({
                     username: $cookies.get('blocChatCurrentUser'),
                     content: newMessage,
